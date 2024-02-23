@@ -1,0 +1,12 @@
+% Define facts about some animals
+mammal(human).
+mammal(dog).
+mammal(cat).
+
+% Define rules for classification
+is_mammal(X) :- mammal(X).
+
+% Define rules for specific animals
+is_human(X) :- mammal(X), X = human.
+is_dog(X) :- mammal(X), X = dog.
+is_cat(X) :- mammal(X), X = cat.
